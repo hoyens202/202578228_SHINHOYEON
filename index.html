@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 with Hanbit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 초기화 -->
+    <style>
+       * {
+        margin:0;
+        
+        padding:0;
+
+        font-family: 'Segoe UI,', Roboto , "Helvetica Neue", Arial ,sans-serif;
+        }
+
+        a {text-decoration:none;}
+        img{border: 0;}
+        li {list-style:none;}
+
+    </style>
+    <!-- 공통 -->
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    <!-- 헤더 -->
+    <style>
+        #main-header {
+            padding: 10px 5px;
+        }
+        #main-header h1 {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+        #main-header ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #main-header li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #main-header li a{
+            color: #555;
+        }
+        #main-header li.active a{
+            color: black;
+            font-weight: 500;
+        }
+        #main-header label{
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            line-height: 27px;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+        #checkbox{
+            display: none;
+        }
+        #checkbox + nav{
+            display: block;
+        }
+        #checkbox:checked + nav{
+            display: none;
+        }
+
+    </style>
+    <!-- 본문과 푸터 -->
+    <style>
+        #main-content {
+            background: #ff4800;
+            padding: 40px 15px 30px;
+        }
+        #main-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(21, 79, 238);
+            font-weight: 500;
+        }
+        #main-content p {
+            color: #222;
+            text-align: center;
+            color: rgb(10, 1, 1);
+        }
+        #sub-content {
+            padding-top: 30px;
+        }
+        #sub-content h1 {
+            text-align: center;
+            color: #ebd9d9;
+        }
+        #sub-content h2 {
+            text-align: center;
+            color: #333;
+            font-size: 17px;
+        }
+        #sub-content p {
+            color: #555;
+        }
+        #sub-content img {
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+        #main-footer {
+            padding-top: 40px;
+        }
+        footer {
+            background: #323232;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>메뉴보기</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈<a></li>
+                    <li><a href="sub1.html">자기소개<a></li>
+                    <li><a href="sub2.html">학교와전공<a></li>
+                    <li><a href="sub3.html">성장과정<a></li>
+                    <li><a href="sub4.html">취미<a></li>    
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>Welcome to 호연's Page</h1>
+            <p>한신대학교 AI·SW 학과 1학년 신호연의 자기소개 페이지입니다.<br>
+               메뉴를 눌러 저에 대한 다양한 이야기를 확인해 주세요.</p>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article class="container">
+            <h1>나의 좌우명</h1>
+            <h2>우리가 무언가를 꾸준히 한다면 그것을 하는 것이 쉬워질 것이다<h2>
+            <img src="images/image_0.jpg">
+            
+            <br>
+            <h1>좋아하는 음악</h1>
+            <h2>김정민-무한지애</h2>
+            <img src="images/image_1.jpg">
+            <p>아래 재생 버튼을 눌러보세요.</p>
+            <audio controls src="media/bgm.mp3">
+                브라우저에서 오디오를 지원하지 않습니다.
+            </audio>
+            <p>등교할때나 공부할 때 위 음악을 자주 듣습니다.</p>
+            
+        </article>
+    </div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>©2006-2025 Ho-yeon. All rights reserved.</div>
+        </footer>
+    </div>\
+    
+</body>
+</html>
+

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ho-yeon | 취미 & 여행</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+
+    <!-- 초기화 -->
+    <style>
+       * {
+            margin:0;
+            padding:0;
+            font-family:'Segoe UI',Roboto,"Helvetica Neue",Arial,sans-serif;
+       }
+       a { text-decoration:none; }
+       li { list-style:none; }
+       img { border:0; }
+    </style>
+
+    <!-- 공통 -->
+    <style>
+        .container {
+            margin-left:auto;
+            margin-right:auto;
+            padding:0 12px;
+        }
+    </style>
+
+    <!-- 헤더  -->
+    <style>
+        #main-header {
+            padding:10px 5px;
+        }
+        #main-header h1 {
+            font-size:20px;
+            font-weight:normal;
+            color:#222;
+            line-height:27px;
+        }
+        #main-header ul {
+            margin:20px 0 10px;
+        }
+        #main-header li {
+            margin:10px 0;
+        }
+        #main-header li a {
+            color:#555;
+        }
+        #main-header li.active a {
+            color:#000;
+            font-weight:600;
+        }
+        #main-header label {
+            float:right;
+            text-align:center;
+            width:40px;
+            height:27px;
+            line-height:27px;
+            border:1px solid #222;
+            border-radius:5px;
+            color:#222;
+        }
+        #checkbox { display:none; }
+        #checkbox + nav { display:block; }
+        #checkbox:checked + nav { display:none; }
+    </style>
+
+    <!-- 본문 & 푸터  -->
+    <style>
+        /* 상단 메인 영역*/
+        #main-content {
+            background:linear-gradient(135deg,#4facfe,#00f2fe,#ffb347);
+            padding:40px 15px 30px;
+        }
+        #main-content h1 {
+            text-align:center;
+            margin-bottom:18px;
+            color:#ffffff;
+            font-weight:700;
+        }
+        #main-content p {
+            text-align:center;
+            color:#fdfdfd;
+            line-height:1.7;
+            font-size:14px;
+        }
+
+        /* 아래 내용 영역: 밝은 하늘색 배경 */
+        #sub-content {
+            padding-top:28px;
+            padding-bottom:30px;
+            background:#f5fafc;
+        }
+
+        #sub-content h1 {
+            text-align:center;
+            color:#144c72;
+            margin-bottom:4px;
+            font-size:20px;
+        }
+        #sub-content h2 {
+            text-align:center;
+            color:#2f7ea8;
+            font-size:15px;
+            margin-bottom:10px;
+            font-weight:500;
+        }
+
+        #sub-content p {
+            text-align:center;
+            color:#444;
+            line-height:1.7;
+            margin-bottom:12px;
+            font-size:13px;
+        }
+
+        /* 대표 이미지(게임/여행) */
+        .main-image {
+            max-width:260px;
+            width:100%;
+            display:block;
+            margin:10px auto 18px;
+            border-radius:14px;
+            box-shadow:0 6px 16px rgba(0,0,0,0.18);
+        }
+
+        /* 여행 사진 갤러리 카드 */
+        .gallery {
+            margin-top:8px;
+        }
+        .trip-card {
+            background:#ffffff;
+            margin:10px 0;
+            padding:10px;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        }
+        .trip-title {
+            font-size:14px;
+            font-weight:600;
+            color:#144c72;
+            margin-bottom:6px;
+            text-align:left;
+        }
+        .trip-card img {
+            width:100%;
+            max-width:280px;
+            height:auto;
+            display:block;
+            margin:6px auto 8px;
+            border-radius:10px;
+            object-fit:cover;
+        }
+        .trip-card p {
+            font-size:12px;
+            color:#555;
+            line-height:1.6;
+            margin-bottom:4px;
+        }
+
+        /* 섹션 사이 간격 */
+        .section {
+            margin-top:25px;
+        }
+
+        #main-footer {
+            padding-top:0;
+        }
+        footer {
+            background:#323232;
+            color:white;
+            font-size:12px;
+            text-align:center;
+            line-height:40px;
+        }
+        #bgm { display:none; }
+
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>Ho-yeon</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="sub1.html">자기소개</a></li>
+                    <li><a href="sub2.html">학교와전공</a></li>
+                    <li><a href="sub3.html">성장과정</a></li>
+                    <liclass="active"><a href="sub4.html">취미</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- 상단 배너 -->
+    <div id="main-content">
+        <article class="container">
+            <h1>취미 & 여행</h1>
+            <p>
+                짧게 즐기는 게임과, 오래 기억에 남는 여행.<br>
+                이 두 가지가 제가 가장 좋아하는 취미입니다.<br><br>
+                아래에는 제가 좋아하는 게임과<br>
+                다녀온 여행들의 일부를 사진과 함께 담았습니다.
+            </p>
+        </article>
+    </div>
+
+    <!-- 본문 -->
+    <div id="sub-content">
+        <article class="container">
+
+            <!-- 1. 게임 (짧게) -->
+            <div class="section">
+                <h1>1. 게임</h1>
+                <h2>즐기는 만큼 분석하는 취미</h2>
+                <img class="main-image" src="images/hobby_game.jpg" alt="게임 이미지">
+                <p>
+                    게임은 단순히 시간을 보내는 활동이 아니라,<br>
+                    전략과 팀워크를 배우는 하나의 경험이라고 생각합니다.<br>
+                    플레이 스타일을 분석하고, 더 좋은 선택을 찾는 과정이 재미있습니다.
+                </p>
+            </div>
+
+            <!-- 2. 여행 소개 -->
+            <div class="section">
+                <h1>2. 여행</h1>
+                <h2>새로운 풍경을 보면서 생각도 함께 넓어지는 시간</h2>
+                <img class="main-image" src="images/travel_main.jpg" alt="여행 대표 이미지">
+                <p>
+                    제주도, 동남아, 일본, 중동, 유럽까지<br>
+                    여러 곳을 여행하며 다양한 풍경과 문화를 직접 보았습니다.<br>
+                    여행을 할 때마다 “세상은 생각보다 넓고, 나는 아직 볼 것이 많다”는 느낌을 받습니다.
+                </p>
+            </div>
+
+            <!-- 3. 여행 사진 갤러리  -->
+            <div class="section">
+                <h1>3. 여행 사진 일부</h1>
+                <h2>기억에 남는 순간들을 사진으로 남겼습니다</h2>
+
+                <div class="gallery">
+                    <!-- 제주도 관련 사진 -->
+                    <div class="trip-card">
+                        <div class="trip-title">제주도의 바다</div>
+                        <img src="images/jeju.jpg" alt="제주도">
+                        <p>
+                            여러 번 찾았던 제주도는<br>
+                            언제 가도 편안하고 익숙한 느낌을 주는 곳입니다.
+                        </p>
+                    </div>
+
+                    <!-- 동,서남아 관련 사진 -->
+                    <div class="trip-card">
+                        <div class="trip-title">따뜻한 날씨와 여유로운 분위기</div>
+                        <img src="images/asia1.jpg" alt="동남아">
+                        <img src="images/asia.jpg" alt="동남아">
+                        <p>
+                            두바이, 태국, 말레이시아 등 동남아 여행에서는<br>
+                            여유로운 공기와 다양한 거리 풍경이 특히 기억에 남습니다.
+                        </p>
+                    </div>
+
+                    <!-- 일본 관련 사진 -->
+                    <div class="trip-card">
+                        <div class="trip-title">정돈된 거리와 조용한 골목</div>
+                        <img src="images/japan.jpg" alt="일본">
+                        <p>
+                            일본에서는 깔끔하게 정돈된 거리와<br>
+                            조용한 골목의 분위기가 인상적이었습니다.
+                        </p>
+                    </div>
+
+                    <!-- 유럽 관련 사진 -->
+                    <div class="trip-card">
+                        <div class="trip-title">유럽 도시의 풍경</div>
+                        <img src="images/europe.jpg" alt="유럽">
+                        <p>
+                            폴란드, 프랑스, 이탈리아, 오스트리아 등<br>
+                            유럽 여러 도시를 다니며,  
+                            같은 유럽 안에서도 서로 다른 분위기를 느낄 수 있었습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>※위에 나온 사진들은 다운로드한 사진이 아닌 직접찍은 사진임을 밝힙니다.※</p>
+        </article>
+    </div>
+
+    <!-- 푸터 -->
+    <div id="main-footer">
+        <footer class="container">
+            <div>©2006-2025 Ho-yeon. All rights reserved. </div>
+        </footer>
+    </div>
+    <audio id="bgm" src="media/bgm2.mp3" autoplay loop></audio>
+
+</body>
+</html>

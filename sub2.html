@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ho-yeon | School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+
+    <!-- 초기화 -->
+    <style>
+       * { margin:0; padding:0; font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif; }
+       a { text-decoration:none; }
+       img{ border:0; }
+       li { list-style:none; }
+    </style>
+
+    <!-- 공통 -->
+    <style>
+        .container { margin-left:auto; margin-right:auto; padding:0 10px; }
+    </style>
+
+    <!-- 헤더 공통 -->
+    <style>
+        #main-header { padding:10px 5px; }
+        #main-header h1 { font-size:20px; font-weight:normal; line-height:27px; color:#222; }
+        #main-header ul{ margin:20px 0 10px; }
+        #main-header li{ margin:10px 0; }
+        #main-header li a{ color:#555; }
+        #main-header li.active a{ color:black; font-weight:500; }
+        #main-header label{
+            text-align:center; float:right;
+            width:40px; height:27px; line-height:27px;
+            color:#222; border:1px solid #222; border-radius:5px;
+        }
+        #checkbox{ display:none; }
+        #checkbox + nav{ display:block; }
+        #checkbox:checked + nav{ display:none; }
+    </style>
+
+    <!-- 본문/푸터 -->
+    <style>
+        
+        #main-content {
+            background:#6a0dad;   
+            padding:40px 15px 30px;
+        }
+        #main-content h1{
+            text-align:center;
+            margin-bottom:20px;
+            color:white;
+            font-weight:500;
+        }
+        #main-content p{
+            text-align:center;
+            color:#f0e6ff;  
+        }
+
+       
+        #sub-content{ padding-top:30px; }
+        #sub-content h1{
+            text-align:center;
+            color:#4b0082;   
+        }
+        #sub-content h2{
+            text-align:center;
+            color:#6a0dad;
+            font-size:17px;
+            font-weight:normal;
+        }
+        #sub-content p{
+            color:#444;
+            text-align:center;
+            line-height:1.6;
+            margin-bottom:10px;
+        }
+        #sub-content img{
+            width:220px;
+            display:block;
+            margin:10px auto;
+            border-radius:10px;
+        }
+
+        /* 테이블 */
+        #sub-content table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+        #sub-content th, #sub-content td{
+            border:1px solid #ccc;
+            padding:8px;
+            font-size:13px;
+            text-align:center;
+        }
+        #sub-content th{
+            background:#f5f0ff;  
+            color:#4b0082;
+        }
+
+       
+        .hs-link {
+            display:block;
+            text-align:center;
+            margin:10px auto 25px;
+            color:#6a0dad;
+            font-weight:bold;
+            font-size:15px;
+        }
+
+        #main-footer{ padding-top:40px; }
+        footer{
+            background:#323232;
+            color:white;
+            font-size:12px;
+            text-align:center;
+            line-height:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>Ho-yeon</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="sub1.html">자기소개</a></li>
+                    <li class="active"><a href="sub2.html">학교와전공</a></li>
+                    <li><a href="sub3.html">성장과정</a></li>
+                    <li><a href="sub4.html">취미</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- 메인 배너 -->
+    <div id="main-content">
+        <article class="container">
+            <h1>School & Major</h1>
+            <p>
+                한신대학교 AI·SW 학과에서 제가 배우는 전공 내용과<br>
+                이번 학기 수업들을 소개합니다.
+            </p>
+
+            <!-- 한신대 공식 사이트 연결 -->
+            <a class="hs-link" href="https://www.hs.ac.kr" target="_blank">
+                ▶ 한신대학교 공식 사이트 바로가기
+            </a>
+        </article>
+    </div>
+
+    
+    <div id="sub-content">
+        <article class="container">
+            <h1>AI·SW 학과 소개</h1>
+            <h2>소프트웨어 중심의 융합 인재 양성</h2>
+            <img src="images/school.jpg" alt="학교 이미지">
+            <p>
+                인공지능, 소프트웨어 개발, 데이터 분석 등<br>
+                IT 전반의 기초부터 실무까지 폭넓게 배우는 학과입니다.<br>
+                빠르게 변화하는 기술 흐름에 맞춰  
+                다양한 실습 중심 수업을 제공하고 있습니다.
+            </p>
+
+            <h1>이번 학기 시간표</h1>
+<table>
+    <thead>
+        <tr>
+            <th>과목명</th>
+            <th>요일</th>
+            <th>간단 설명</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>AI·SW 수학</td>
+            <td>화 · 목</td>
+            <td>AI 및 프로그래밍 기초에 필요한 수학 개념 학습</td>
+        </tr>
+        <tr>
+            <td>웹 프로그래밍</td>
+            <td>화 · 목</td>
+            <td>☆HTML, CSS 기반 웹페이지 제작 — 지금 보고 있는 과목☆</td>
+        </tr>
+        <tr>
+            <td>Essential English</td>
+            <td>화 · 목</td>
+            <td>기초 영어 읽기/쓰기/말하기 능력 향상</td>
+        </tr>
+        <tr>
+            <td>문제해결프로그래밍 (Python/IDLE)</td>
+            <td>화 · 목</td>
+            <td>파이썬으로 문제 해결 능력과 알고리즘 기초 학습</td>
+        </tr>
+        <tr>
+            <td>AI 아트코딩</td>
+            <td>수</td>
+            <td>AI를 활용한 창작·아트 프로젝트 실습</td>
+        </tr>
+        <tr>
+            <td>성서와 인물</td>
+            <td>수</td>
+            <td>성서 속 인물들의 삶과 메시지를 이해하는 교양 과목</td>
+        </tr>
+    </tbody>
+</table>
+
+
+            <br>
+
+            <h1>전공에서 나 자신이 목표하는 바</h1>
+            <p>
+                • 소프트웨어 개발 능력 향상<br>
+                • 협업 기반의 프로젝트 경험 축적<br>
+                • 인공지능 모델을 직접 구현할 수 있는 수준까지 성장<br>
+                • 빅데이터 활용 능력 및 문제 해결 능력 키우기<br>
+            </p>
+        </article>
+    </div>
+
+    <div id="main-footer">
+        <footer class="container">
+            <div>©2006-2025 Ho-yeon. All rights reserved.</div>
+        </footer>
+    </div>
+    
+
+</body>
+</html>

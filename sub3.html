@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ho-yeon | 성장과정</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+
+    <!-- 초기화 -->
+    <style>
+       * { margin:0; padding:0; font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif; }
+       a { text-decoration:none; }
+       img{ border:0; }
+       li { list-style:none; }
+    </style>
+
+    <!-- 공통 -->
+    <style>
+        .container { margin-left:auto; margin-right:auto; padding:0 10px; }
+    </style>
+
+    <!-- 헤더 공통 -->
+    <style>
+        #main-header { padding:10px 5px; }
+        #main-header h1 { font-size:20px; font-weight:normal; line-height:27px; color:#222; }
+        #main-header ul{ margin:20px 0 10px; }
+        #main-header li{ margin:10px 0; }
+        #main-header li a{ color:#555; }
+        #main-header li.active a{ color:black; font-weight:600; }
+        #main-header label{
+            text-align:center; float:right;
+            width:40px; height:27px; line-height:27px;
+            color:#222; border:1px solid #222; border-radius:5px;
+        }
+        #checkbox{ display:none; }
+        #checkbox + nav{ display:block; }
+        #checkbox:checked + nav{ display:none; }
+    </style>
+
+    <!-- 본문 & 푸터 (보라 계열 포인트) -->
+    <style>
+        #main-content {
+            background:#96a6ff; /* 진보라 */
+            padding:40px 15px 30px;
+        }
+        #main-content h1{
+            text-align:center;
+            margin-bottom:20px;
+            color:white;
+            font-weight:600;
+        }
+        #main-content p{
+            text-align:center;
+            color:#f0e6ff;
+            line-height:1.6;
+        }
+
+        #sub-content { padding-top:30px; }
+        #sub-content h1{
+            text-align:center;
+            color:#26a9f5;
+            margin-bottom:5px;
+        }
+        #sub-content h2{
+            text-align:center;
+            color:#5544e9;
+            font-size:17px;
+            margin-bottom:10px;
+        }
+        #sub-content p{
+            color:#444;
+            line-height:1.7;
+            margin-bottom:12px;
+            text-align:center;
+        }
+        #sub-content img{
+            width:220px;
+            display:block;
+            margin:10px auto 20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.15);
+        }
+        .qa-box {
+            margin: 20px 0 40px;
+            }
+
+        .q {
+            background:#6a0dad;
+            color:white;
+            padding:10px;
+            margin-bottom:5px;
+            cursor:pointer;
+            border-radius:5px;
+            font-size:14px;
+            }
+
+        .a {
+            display:none; /* 처음에는 숨김 */
+            padding:10px;
+            margin-bottom:10px;
+            background:#f5f0ff;
+            border-radius:5px;
+            font-size:13px;
+            color:#333;
+            line-height:1.6;
+            }
+
+
+        /* 강조 문구 박스 */
+        .quote-box{
+            background:#f5f0ff;
+            border-left:5px solid #0d0f8b;
+            padding:15px;
+            margin:20px 0;
+            font-style:italic;
+            text-align:center;
+            color:#1e65ff;
+        }
+
+        /* 리스트 */
+        ul{
+            padding:0 20px;
+        }
+        ul li{
+            color:#444;
+            font-size:14px;
+            margin-bottom:8px;
+            line-height:1.5;
+        }
+
+        footer{
+            background:#323232;
+            color:white;
+            font-size:12px;
+            text-align:center;
+            line-height:40px;
+            margin-top:40px;
+        }
+        #bgm { display:none; }
+
+    </style>
+   
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+    
+        $(function() {
+        
+         $(".q").click(function() {
+                $(this).next(".a").slideToggle(200);
+             });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>Ho-yeon</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈<a></li>
+                    <li><a href="sub1.html">자기소개<a></li>
+                    <li><a href="sub2.html">학교와전공<a></li>
+                    <li class="active"><a href="sub3.html">성장과정</a></li>
+                    <li><a href="sub4.html">취미<a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- 상단 영역 -->
+    <div id="main-content">
+        <article class="container">
+            <h1>성장 과정</h1>
+            <p>
+                지금의 제가 있기까지, 어떤 경험과 가치관이 저를 만들었는지<br>
+                천천히 정리해 본 페이지입니다.
+            </p>
+        </article>
+    </div>
+
+    <!-- 상세 내용 -->
+    <div id="sub-content">
+        <article class="container">
+
+            <h1>1. 호기심 많은 어린 시절</h1>
+            <h2>무언가를 직접 만져 보고 이해해야 직성이 풀렸던 아이</h2>
+            <img src="images/growth1.jpg" alt="이미지1">
+            <p>
+                어릴 때부터 사물의 원리가 궁금해 장난감을 분해했다가  
+                다시 조립 못 해서 혼나기도 했습니다.  
+                하지만 그때의 호기심이 지금의 전공 선택으로 이어진 것 같아요.
+            </p>
+
+            <div class="quote-box">
+                "모르는 걸 그대로 두지 못하는 성격은 지금도 변하지 않았다."
+            </div>
+
+            <h1>2. 솔직한 학창시절</h1>
+            <h2>공부보다는 친구들과 노는 게 더 즐거웠던 시기</h2>
+            <img src="images/growth2.jpg" alt="이미지2">
+            <p>
+                 학창시절을 솔직하게 말하면, 저는 공부보다 노는 걸 더 좋아하는 학생이었습니다.<br>
+                친구들과 게임하고, 운동하고, 이야기 나누는 시간이 훨씬 재미있었고  
+                ‘진로’나 ‘미래’ 같은 단어는 솔직히 크게 와닿지 않았어요.<br><br>
+
+                하지만 전교부회장을 하며 다양한 사람들과 어울리고, 여러 활동을 경험하면서  
+                자연스럽게 “나는 어떤 걸 좋아하지?”, “뭘 잘하지?”라고  
+                스스로에게 질문을 던지게 된 시기이기도 합니다.
+            </p>
+
+            <div class="quote-box">
+                "재미있게 놀던 경험들도 결국 지금의 나를 만드는 원동력이 되었다."
+            </div>
+
+           
+            <p>
+                공부를 본격적으로 시작한 건 조금 늦었지만,  
+                 그때 자유롭게 놀고 다양한 경험을 했던 시간이  
+                 지금의 나에게 **창의성·관찰력·넓은 시야**를 준 것 같아요.
+            </p>
+
+
+            <h1>3. 대학에서 시작된 본격적인 성장</h1>
+            <h2>AI·SW 학과에서 나의 방향을 찾다</h2>
+            <img src="images/growth3.jpg" alt="성장과정 이미지3">
+            <p>
+                대학에서는 웹, 파이썬, C언어, 인공지능 등  
+                새로운 기술을 직접 다루는 수업을 들으며  
+                ‘내가 정확히 무엇을 좋아하는지’ 더 깊게 알게 되었습니다.
+            </p>
+
+            <div class="quote-box">
+                "기술을 배운다는 건 내 가능성을 넓혀가는 일이라고 믿는다."
+            </div>
+
+            <h1>4. 앞으로의 목표</h1>
+            <p>
+                • 기본기를 탄탄하게 다지고, 전공과목에서 자신감 갖기<br>
+                • 웹 개발·AI 등 관심 분야의 개인 프로젝트 진행<br>
+                • 꾸준히 성장하는 나만의 루틴 만들기<br>
+                • 더 많이 배우고, 더 깊게 이해하는 개발자로 성장하기
+            </p>
+
+
+            <h1>5. 자주 받는 질문 (Q&A)</h1>
+            <h2>클릭하면 답이 열립니다</h2>
+
+            <div class="qa-box">
+                <div class="q">Q1. 왜 AI·SW 학과를 선택했나요?</div>
+                <div class="a">
+                    게임, 인공지능, 웹 등 다양한 분야에 관심이 있었고<br>
+                    컴퓨터공학을 전반적으로 배울 수 있는 전공이라고 생각해서 선택했습니다.
+            </div>
+
+            <div class="q">Q2. 가장 재미있었던 과목은 무엇인가요?</div>
+            <div class="a">
+                웹 프로그래밍이 제일 재미있었습니다.<br>
+                코드 한 줄만 바꿔도 화면이 바로 달라지는 게 신기했고,<br>
+                내가 만든 페이지를 모바일로 볼 수 있다는 점이 매력적이었습니다.
+            </div>
+
+            <div class="q">Q3. 앞으로 어떤 개발자가 되고 싶나요?</div>
+            <div class="a">
+                사용자가 편하게 느끼는 서비스를 만드는 개발자가 되고 싶습니다.<br>
+                 단순히 기능만 구현하는 것이 아니라, 디자인과 사용성까지 신경 쓰는 것이 목표입니다.
+        </div>
+    </div>
+
+        </article>
+    </div>
+
+    <footer>
+        ©2006-2025 Ho-yeon. All rights reserved.
+    </footer>
+    <audio id="bgm" src="media/bgm1.mp3" autoplay loop></audio>
+
+</body>
+</html>
